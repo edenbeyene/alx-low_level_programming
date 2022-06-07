@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-long double fibonacci[98];
+long fibonacci[98];
 
 	fibonacci[0] = 1;
 	fibonacci[1] = 2;
@@ -19,9 +19,9 @@ long double fibonacci[98];
 	{
 		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 		if (i == 97)
-			printf("%ld\n", fibonacci[i]);
+			printf("%20ld\n", fibonacci[i]);
 		else
-			printf("%ld, ", fibonacci[i]);
+			printf("%20ld, ", fibonacci[i]);
 	}
 
 	return (0);
