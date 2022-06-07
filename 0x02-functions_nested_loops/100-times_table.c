@@ -19,8 +19,12 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-}
 
+
+else {
+	return (0);
+}
+}	
 /**
  * putformat - formatted characters to output
  * @n: number to format
