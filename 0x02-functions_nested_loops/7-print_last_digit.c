@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - check the code for main .
- *
- * Return: Always 0.
+ * print_last_digit - Check main
+ * @r: An integer input
+ * Description: This function prints the last digit of a number
+ * Return: last digit of number r
  */
 int print_last_digit(int r)
 {
