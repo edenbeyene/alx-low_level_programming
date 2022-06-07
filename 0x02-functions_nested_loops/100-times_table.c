@@ -19,7 +19,8 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-}	
+}
+
 /**
  * putformat - formatted characters to output
  * @n: number to format
@@ -27,7 +28,7 @@ void print_times_table(int n)
  */
 void putformat(int n)
 {
-	if (n <= 9)
+	if (n <= 9 && n != 0)
 	{
 		_putchar(',');
 		_putchar(' ');
@@ -43,6 +44,10 @@ void putformat(int n)
 		_putchar(n / 10 + '0');
 		_putchar(n % 10 + '0');
 	}
+	else if (n == 0)
+        {
+                _putchar(n / 10 + '0');       
+        }
 	else
 	{
 		_putchar(',');
