@@ -9,17 +9,20 @@
 int main(void)
 {
 	int i;
-long int f1 = 1, f2 = 2, sum;
+	long int fibonacci[50];
 
-	printf("%ld, %ld, ", f1, f2);
+	fibonacci[0] = 1;
+	fibonacci[1] = 2;
+	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
 
 	for (i = 2; i < 98; i++)
-{
-		sum = f1 + f2;
-		printf("%ld,", sum);
+	{
+		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+		if (i == 97)
+			printf("%ld\n", fibonacci[i]);
+		else
+			printf("%ld, ", fibonacci[i]);
+	}
 
-		f1 = f2;
-		f2 = sum;
-}
 	return (0);
 }
