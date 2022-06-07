@@ -8,20 +8,16 @@
 
 int main(void)
 {
-	int i;
-	 int fibonacci[98];
+	int i,f1 =1,f2 =2,sum;
+	
+	printf("%ld, %ld, ", f1, f2);
 
-	fibonacci[0] = 1;
-	fibonacci[1] = 2;
-	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
-
-	for (i = 2; i < 98; i++)
+	for (i = 2; i < 98; ++i)
 	{
-		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-		if (i == 97)
-			printf("%ld\n", fibonacci[i]);
-		else
-			printf("%ld, ", fibonacci[i]);
+		sum = f1 + f2;
+		f1 = f2;
+		f2 = sum; 
+		printf("%ld\n", sum);
 	}
 
 	return (0);
