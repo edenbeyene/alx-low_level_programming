@@ -12,7 +12,7 @@ if (n == 0)
 { 
 _putchar(n + '0')
 _putchar('\n');
-;
+
 }
 else if (n > 0 && n < 15)
 {	
