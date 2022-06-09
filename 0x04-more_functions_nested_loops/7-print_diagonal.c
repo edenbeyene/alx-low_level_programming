@@ -13,10 +13,9 @@ if (n < 1)
 
 _putchar('\n');
 }
-
 while (n > 0)
 {
- 
+
 i = c;
 while (i > 0)
 {
