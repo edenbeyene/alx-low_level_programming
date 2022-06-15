@@ -2,36 +2,32 @@
 
 /**
  *leet - function to in code
- *@n: char to be modified
+ *@s: char to be modified
  *Return: char var
  */
-char *leet(char *n)
+char *leet(char *s)
 {
-int i;
-for (i = 0; n[i] != '\0'; i++)
-{
-if (n[i] == 'a' || n[i] == 'A')
-{
-n[i] = (4 + '0');
-}
-else if (n[i] == 'e' || n[i] == 'E')
-{
-n[i] = (3 + '0');
-}
-else if (n[i] == 'O' || n[i] == 'o')
-{
-n[i] = (0 + '0');
-}
-else if (n[i] == 't' || n[i] == 'T')
-{
-n[i] = (7 + '0');
-}
-else if (n[i] == 'l' || n[i] == 'L')
-{
-n[i] = 1;
-}
-}
-return (n);
+int a = 0, b = 0, l = 5;
+	char r[5] = {'A', 'E', 'O', 'T', 'L'};
+	char n[5] = {'4', '3', '0', '7', '1'};
 
+	while (s[a])
+	{
+		b = 0;
+
+		while (b < l)
+		{
+			if (s[a] == r[b] || s[a] - 32 == r[b])
+			{
+				s[a] = n[b];
+			}
+
+			b++;
+		}
+
+		a++;
+	}
+
+	return (s);
 }
 
