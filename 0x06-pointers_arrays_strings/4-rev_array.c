@@ -8,15 +8,22 @@
  */
 void reverse_array(int *a, int n)
 {
-int i;
-for (i = n - 1; i >= 0; --i)
+int *p, i, aux, k;
+
+p = a;
+
+for (i = 1; i < n; i++)
 {
-printf("%d", a[i]);
-if (i != 0)
+p++;
+}
+
+for (k = 0; k < i / 2; k++)
 {
-printf(", ");
+aux = a[k];
+a[k] = *p;
+*p = aux;
+p--;
 }
 }
-printf("\n");
-}
+
 
