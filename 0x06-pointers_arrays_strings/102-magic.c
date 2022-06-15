@@ -9,14 +9,14 @@ int *p;
 a[2] = 1024;
 p = &n;
 /**
-* main - function with void parameter
-* Remember:
+* main - Entry point
+* Description: 'the program's description'
 * @a: array of integer
 * @p: pointer
-* Return : zero
+* Return : Always 0 (Success)
 * - you are not allowed to code anything else than this line of code
 */
-p = 98;
+a[2] = 98;
 /* ...so that this prints 98\n */
 printf("a[2] = %d\n", a[2]);
 return (0);
