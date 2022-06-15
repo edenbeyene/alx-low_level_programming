@@ -20,7 +20,7 @@ i++;
 j++;
 n--;
 }
-
+dest[i + n + 1] = '\0';
 return (dest);
 }
 
