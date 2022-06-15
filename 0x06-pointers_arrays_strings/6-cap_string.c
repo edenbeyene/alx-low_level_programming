@@ -2,20 +2,31 @@
 
 /**
  *cap_string - function which conver lowercase to uppercase
- *@n: string to be modified
+ *@s: string to be modified
  *
  *Return: char var
  */
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
-int i;
-for (i = 0; n[i] != '\0'; i++)
-{
-if (n[i] >= 'A' && n[i] <= 'Z')
-{
-n[i] += 32;
-}
-}
-return (n);
+int a = 0, i;
+	int cspc = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
+
+	while (s[a])
+	{
+		i = 0;
+
+		while (i < cspc)
+		{
+			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
+				s[a] -= 32;
+
+			i++;
+		}
+
+		a++;
+	}
+
+	return (s);
 }
 
