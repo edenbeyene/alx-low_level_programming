@@ -41,8 +41,3 @@ int is_prime_number(int n)
 
 	return (is_divisible(n, div));
 }
-
-    © 2022 GitHub, Inc.
-
-    Terms
-    P
