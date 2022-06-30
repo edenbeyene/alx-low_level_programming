@@ -220,7 +220,7 @@ int main(int argc, char *argv[])
 	}
 	for (index = 0; final_prod[index]; index++)
 	{
-		if (final_prod[index] != 'x')
+	if (final_prod[index] != 'x')
 			putchar(final_prod[index]);
 	}
 	putchar('\n');
